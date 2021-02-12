@@ -1,0 +1,139 @@
+.search-result-data {
+  top: 90px;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  font-family: Poppins, serif;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  box-shadow: 0 2px 6px -5px #000000;
+
+  > * {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  > span {
+    margin-right: 40px;
+  }
+
+  select {
+    margin-right: 20px;
+  }
+
+  .total-count, .current-search {
+    font-weight: 900;
+    color: gray;
+  }
+
+  .total-count {
+    margin: 0 5px;
+  }
+
+  .selected-filters {
+    .filters-item {
+      padding: 0 10px;
+      border: 2px solid gray;
+      border-radius: 6px;
+      font-family: Poppins, sans-serif;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+
+    }
+  }
+
+  .result-per-page {
+    i {
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    span {
+      margin-right: 5px;
+    }
+
+    select {
+      border: 2px solid lightgray;
+      padding: 7px 13px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-family: Poppins, sans-serif;
+      transition: all 0.3s;
+
+      &:hover {
+        border: 2px solid gray;
+      }
+    }
+  }
+
+  .page-changer {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+
+    > span {
+      margin: 0 5px;
+    }
+
+    i {
+      cursor: pointer;
+      color: lightgray;
+      transition: all 0.3s;
+
+      &:hover {
+        color: gray;
+      }
+    }
+  }
+
+  input {
+    width: 50px;
+  }
+
+  .result-count {
+    display: flex;
+  }
+
+  .result-count-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .search-result-data {
+    top: 150px;
+
+    > * {
+      flex: inherit;
+    }
+
+    .result-count {
+      display: none;
+    }
+
+    .result-count-mobile {
+      display: block;
+    }
+
+    .result-per-page {
+      display: none;
+    }
+
+    .page-changer {
+      width: 115px;
+
+      i {
+        font-size: 24px;
+      }
+    }
+  }
+}

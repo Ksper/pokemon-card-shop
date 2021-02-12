@@ -1,0 +1,26 @@
+.cart-container {
+  flex: 1;
+  justify-content: flex-end;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+
+  .cart {
+    padding: 7px 13px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    i {
+      color: gray;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    &:hover {
+      border: 2px solid lightgray;
+    }
+  }
+}

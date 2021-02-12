@@ -1,0 +1,64 @@
+.search-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  form {
+    position: relative;
+  }
+
+  i.send {
+    color: gray;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: absolute;
+    right: 15px;
+    top: 13px;
+
+    &:hover {
+      color: #E3350D;
+    }
+  }
+
+  .search-input {
+    width: 200px;
+    padding: 7px 40px 7px 13px;
+    border-radius: 5px;
+    border: 2px solid lightgray;
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    position: relative;
+
+    &:focus {
+      outline: none;
+      border: 2px solid gray;
+    }
+  }
+
+  .filter {
+    cursor: pointer;
+    border: 2px solid transparent;
+    padding: 7px 13px;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: all 0.3s;
+
+    span {
+      font-family: Poppins, sans-serif;
+    }
+
+    i {
+      color: gray;
+      margin-right: 5px;
+
+      &.opened {
+        color: #E3350D;
+      }
+    }
+
+    &:hover {
+      border: 2px solid lightgray;
+    }
+  }
+}
+

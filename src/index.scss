@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('./assets/pokemon_arena_bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top 25px center;
+  background-attachment: fixed;
+
+  .layer {
+    z-index: -1;
+    background-color: #0d2340bf;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
